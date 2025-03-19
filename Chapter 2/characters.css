@@ -25,6 +25,10 @@
     font-size: 17px;
 } /*These properties design the font of the navigation links*/
 
+a:active {
+  color: white;
+} /* When the link is clicked the font turns white before directing to the linked page*/
+
 body {
     background-color: #1D1616;
     font-family:Georgia, 'Times New Roman', Times, serif;

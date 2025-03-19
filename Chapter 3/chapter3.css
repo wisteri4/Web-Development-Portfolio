@@ -1,8 +1,6 @@
-
 .container {
     display: flex; 
 } /* flex the container so the images are in a row */
-
   
 .column {
     padding: 20px; 

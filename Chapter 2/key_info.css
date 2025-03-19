@@ -1,0 +1,59 @@
+.nav ul{
+    list-style: none;
+    text-align: center;
+    background-color: #A91D3A;
+    box-shadow: 0px 8px 10px darkred;
+    margin: 0;
+    padding: 0;
+} /*This is to create the background of the navigation bar*/
+  
+.nav li {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+} /*Edit navigation links to display in the center*/
+  
+.nav a:hover {
+    text-shadow: 0 2px 5px #00000071, 0 2px 6px #a91d3915;
+} /*When mouse hovers over a link on the navigation bar, there is a black shadow to emphasise the link*/
+  
+.nav a{
+    text-decoration:none;
+    color: #1D1616;
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+} /*These properties design the font of the navigation links*/
+
+body {
+    background-color: #1D1616;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 0px 0px 20px;
+} /* For the general font family, background color and overall padding*/
+
+h2{
+    text-align: center;
+    text-shadow: 0px 1px 3px rgb(255, 34, 0);
+    color: #A91D3A;
+    margin-top: 5%;
+    font-size: 40px;
+} /* Edit heading to emphasize */ 
+
+p, ul{
+    color: #A91D3A;
+    text-align: center;
+    padding: 10px 90px 5px;
+    line-height: 2;
+}/*Paragraph and unordered links have the same line height, font color and padding*/
+
+p {
+    font-size: 17px;
+} /*Separate paragraph property to change the font size of the paragraph*/
+
+.footer{
+    margin-top: 100px;
+    color: #A91D3A;
+    bottom:0;
+    position: fixed;
+} /*Edit the footer to stay the bottom of the page*/
+  

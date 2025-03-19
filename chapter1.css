@@ -1,0 +1,53 @@
+.box {
+    padding: 50px 60px; 
+    width: 60%;
+} /*Format the text to the left of image*/
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 10px;
+} /*Flex the contents in the container so they line in a row*/
+
+.image {
+    margin-left: 220px;
+    margin-top: auto;
+} /*Edit the layout of the image*/
+
+.heading
+{
+    background-color:#F2F6D0;
+    border-radius: 30px;
+} /*Put a background color to the heading and round the shape by radius*/
+
+.tips{
+    background-color:#F2F6D0;
+    padding:10px;
+    border-radius: 30px;
+    margin: 5%;
+    color: #443627;
+    text-align: center;
+    line-height: 2;
+    font-size: 12px;
+} /*To emphasize tips, increase font size and add background color similar to the headings*/
+
+body { 
+    background-color: #EFDCAB;
+    font-family:'Courier New', Courier, monospace;
+    padding: 50px 80px 50px 80px; 
+    text-align: justify;
+} 
+/* Padding top right bottom and left set whole background color and use a font family for the entire website, justify text to appear neat*/
+
+h1, h2{
+    color: #443627;
+    padding: 20px; 
+}
+/*Set color and padding for heading 1 and heading 2 */
+
+p, li{ 
+    color: #443627;
+    line-height: 1.7;
+}
+/*Set color and line height for p and list*/

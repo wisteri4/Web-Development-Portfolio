@@ -1,0 +1,14 @@
+
+.container {
+    display: flex; 
+} /* flex the container so the images are in a row */
+
+  
+.column {
+    padding: 20px; 
+} /* Padding around the images */
+
+img { 
+    filter:sepia(3%); 
+    filter:saturate(70%);
+} /*Add filter to the images using two different filters*/

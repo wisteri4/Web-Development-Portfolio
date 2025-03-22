@@ -1,0 +1,86 @@
+header{
+    font-family: Tahoma, sans-serif;
+    color: #ffffff;
+    background-color: #17072b;
+    text-align: center;
+    padding: 15px;
+    font-size:30px;
+} /*Add header font family, color and font size and alignment, this applies to the navigation bar and the main heading*/
+
+h1, h2{
+    text-decoration: underline 3px;
+    font-family: Tahoma, sans-serif;
+} /*For heading 1 and heading 2 the underline and font family is the same*/
+
+h2{
+    font-size:30px;
+} /*Heading 2 font size is the same as the header*/
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} /*Navigation bar created as an undordered list and removes the list style*/
+
+li a{
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 15px;
+    color: #ffffff;
+} /*Center align the list statements and color the font white*/
+
+nav li{
+  display:inline-block;
+} /*To align the lists in a row*/
+
+nav a:hover{
+   background-color: rgb(38, 31, 57);
+} /*When hovering on the navigation link it displays a color*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}/*Arial for the overall font of the webpage*/
+
+#side{
+    line-height: 2;
+    text-align: center;
+} 
+
+aside img{
+    margin-top: 38px;
+} /*Adjust the images at the right side*/
+
+main{ 
+    margin:10px;
+    display:flex;
+}/*Flex the groups article and aside to display them in a horizontal direction*/
+
+article{ 
+   padding-left: 20px;
+   padding-right: 40px;
+}/*Adjust the padding of the 'Welcome' content*/
+
+p, #side{ 
+    font-size: 20px;
+    text-align: justify; 
+}/*P is the paragraph below welcome and #side are the points of the line up, both have the same font size and text alignment*/
+
+aside{
+    background-color: #172d67;
+    color: #ffffff;
+    float: right;
+    padding-left: 20px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    width: 60%;
+    height: 50%;
+} /*The side part is float to the right to stay at the right side of the webpage*/
+
+footer{
+    background-color:#8c15e9;
+    color: #ffffff;
+    text-align: center;
+    padding: 7px;
+} /*Footer stays at the bottom of the website*/
+
+

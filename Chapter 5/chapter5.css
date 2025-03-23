@@ -1,0 +1,7 @@
+.flex-container /*Use flexbox "flex-container to align the video horizontally and vertically*/
+{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+} /*To center in a row (horizontally), To center in a column (vertically) then the full viewport height*/

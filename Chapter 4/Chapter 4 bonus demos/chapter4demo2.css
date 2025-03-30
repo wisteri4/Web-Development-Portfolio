@@ -1,0 +1,173 @@
+body{ 
+    margin: 0; /*To remove any gaps especially with the menu*/
+    background-color: #123458;
+    color: #123458; 
+    font-family:'Courier New', Courier, monospace; 
+} 
+
+h1{
+    color: white;
+    text-shadow: 1px 2px  #123458, 2px 4px#D4C9BE;
+    font-size: 50px;
+} /*Stylise the header to emphasize using the colour palette used in the webpage as text shadows*/
+
+#menu{
+    list-style-type: none ;
+    margin: 0;
+    padding:0;
+    padding-top: 5%;
+    width: 200px;
+    background-color: #F1EFEC;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+} /*Menu styling to place vertically in the webpage*/
+
+li a {
+    display: block;
+    color: #123458;
+    padding: 20px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid #123458;
+}  /*Link styling, add aproppriate spacing between each navigation on top of each other 
+and add a bottom border to display separation between links*/
+
+li a.active {
+    background-color: #123458;
+    color: white;
+}/*Active webpage has a light blue background with white font color*/
+  
+li a:hover:not(.active) {
+    background-color: #EEF1DA;
+    color: #030303;
+}/*Non-active links when hovered will show a very light blue color and white font*/
+
+header{
+    margin-left:15%;
+    padding:16px;
+    text-align: center;
+    margin-bottom: 2%;
+}/*Header has margin and padding from the menu and bottom margin with the main content and is center aligned*/
+
+main{
+    margin-left:15%;
+    padding:1px 16px;
+    display: flex;
+}/*Main content has margin and padding from the menu, flex the main contents to put them in a horizontal manner*/
+
+.introduction{
+    background-color:#F1EFEC;
+    box-shadow: 4px 4px #D4C9BE;
+    width: 70%;
+    margin-left: 13%;
+    border-radius: 40px;
+    padding: 15px;
+    padding-left: 1px;
+    text-align: center;
+    font-size: 18px;
+}/*Introduction styling*/
+
+column{
+    float: left;
+    width: 50%;
+}/*Column the webpage into two*/
+
+#todayreminder{
+    background-color: #F1EFEC;
+    height: 260px;
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px #D4C9BE;
+}
+
+#remind{
+    color: #123458;
+    background-color: #D4C9BE;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    height: 70%;
+}
+
+#remind td{
+    border-bottom: 1px solid #F1EFEC;
+}/*Bottom border to separate each reminder*/
+
+.container {
+    position: relative;
+    padding-left: 30px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}  
+
+.container:hover input ~ .checkmark {
+    background-color: #C7D9DD;
+}/*Mouse hover on radio button and blue color appears*/
+  
+.checkmark{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #F1EFEC;
+    border-radius: 50%;
+    box-shadow: 1px 2px #123458;
+}/*Positioning of the radio button with the text*/
+
+.container input:checked ~ .checkmark {
+    background-color: #030303;
+    box-shadow: 1px 2px #F1EFEC;
+}/* When the radio button is clicked, add a black background and shadow*/
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.weeklyplan{
+    background-color: #F1EFEC;
+    border-radius: 20px;
+    height: 90%;
+    width: 84%;
+    padding: 20px;
+    padding-left: 20px;
+    box-shadow: 4px 4px #D4C9BE;
+}/*Adjust the size, background color and box shadow of the container to fit the theme of the webpage*/
+
+#week{
+    background-color: #D4C9BE;
+    border-radius: 20px;
+    border-collapse: collapse;
+} /*The days of the week background colour, rounding the corners and to make a single border to separate the days of the week*/
+
+#week th{
+    border: 1px solid #F1EFEC;
+    vertical-align: top;
+    height: 130px;
+    width: 140px;
+} /*Utilise the space of the days of the week on the weeklyplan containte by increasing the space of the cells 
+so that it means weekly reminders are to be displayed in the cells*/
+
+footer{
+    bottom:0;
+    position: fixed;
+    background-color: #F1EFEC;
+    width: 100%;
+    padding: 2px;
+    color:#123458;
+    text-align: right;
+} /*Style the footer to fit the theme and align the text to the right*/

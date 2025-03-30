@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="chapter4demo1.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 1: Study planner</title> <!--First demo of the study planner-->
+</head>
+<body>
+    <ul id="menu"> <!--To style the menu manually and to place it vertically-->
+        <li> <a class="active" a href="#">Home</a></li> <!--For the active webpage-->
+        <li><a href="#">Reminders</a></li>
+        <li><a href="#">Weekly Plan</a></li>
+        <li><a href="#">Monthly Plan</a></li>
+    </ul>
+
+    <header> <!--Header that includes the heading and the introductory content-->
+        <h1>My Study Planner</h1>
+
+        <div class="introduction">
+            <p>Welcome to your very own study planner for the Web Development Module in the Creative Computing course </p>
+        </div>
+    </header>
+
+    <main> <!--Main content contains the plans for the week and for the day-->
+
+        <column> <!--To separate both plans into two columns-->
+            <div id="todayreminder"> <!--This is to style the entire container behind the reminders-->
+                <h2>Today's Reminder</h2>
+                <table id="remind"> <!--To style the reminders and the radio button-->
+                    <tr>
+                        <td> 
+                            <label class="container">Chores    
+                            <input type="radio">
+                            <span class="checkmark"></span>                         
+                            </label> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="container">Chapter 4 completion
+                            <input type="radio">
+                            <span class="checkmark"></span>
+                            </label> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>  
+                            <label class="container">Chapter 4 bonus        
+                            <input type="radio">
+                            <span class="checkmark"></span>
+                            </label> 
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </column>
+
+        <column> <!--2nd column of the webpage-->
+            <div class="weeklyplan"> <!--To style the entire container-->
+                <h2>Weekly Plan</h2>
+                <table id="week"> <!--Created a table to display weekly reminders-->
+                    <tr>
+                        <th>Mon</th> <!--Each cell has a table heading of the day of the week-->
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                    </tr>
+                    <tr>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </table>
+            </div>
+        </column>
+
+    </main>
+
+    <footer> <!--Created a footer as per requirements of chapter 4-->
+        © All Rights Reserved
+    </footer>
+
+</body>
+</html>
